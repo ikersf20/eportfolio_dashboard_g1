@@ -2,9 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Cabecera from './componentes/Cabecera/Cabecera'
+import Roles from './componentes/Roles/Roles'
+import Dashboard from './componentes/Dashboard/Dashboard'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  /*const [count, setCount] = useState(0)
 
   return (
     <>
@@ -29,7 +34,33 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  )*/
+
+
+
+
+
+    return(
+      <>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-12 cabecera'>
+            <Cabecera></Cabecera>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-3 roles'>
+            <Roles></Roles>
+          </div>
+          <div className='col-9 dashboard'>
+            <Dashboard></Dashboard>
+          </div>
+        </div>
+      </div>
+      </>
+      
+    )
 }
+
 
 export default App
