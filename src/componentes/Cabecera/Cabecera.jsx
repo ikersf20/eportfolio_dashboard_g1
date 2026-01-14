@@ -1,10 +1,10 @@
-function Cabecera(){
+function Cabecera(props){
 
     return(
         <>
-        <div className='col-12 cabecera'>
-            <p>HEADER</p>
-        </div>
+        <header>
+            <p>HEADER, {props.usuario}, {props.token}, {props.menu}</p>
+        </header>
         </>
     )
 
