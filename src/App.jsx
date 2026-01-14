@@ -44,17 +44,16 @@ function App() {
       <>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-12 cabecera'>
-            <Cabecera></Cabecera>
-          </div>
+          
+          <Cabecera></Cabecera>
+          
         </div>
         <div className='row'>
-          <div className='col-3 roles'>
-            <Roles></Roles>
-          </div>
-          <div className='col-9 dashboard'>
-            <Dashboard></Dashboard>
-          </div>
+          
+          <Roles></Roles>
+          
+          <Dashboard></Dashboard>
+          
         </div>
       </div>
       </>
