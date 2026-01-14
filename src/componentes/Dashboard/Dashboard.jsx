@@ -1,9 +1,9 @@
-function Dashboard() {
+function Dashboard(props) {
   return (
       <>
-      <div className='col-9 dashboard'>
-        <p>MAIN</p>
-      </div>
+      <main>
+      <p>MAIN, {props.usuario}, {props.token}, {props.menu}</p>
+    </main>
       </>
 
   );

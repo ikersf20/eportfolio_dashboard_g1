@@ -1,9 +1,9 @@
-function Roles() {
+function Roles(props) {
   return (
     <>
-    <div className='col-3 roles'>
-        <p>ROLES</p>
-    </div>
+    <aside>
+      <p>ROLES, {props.usuario}, {props.token}, {props.menu}</p>
+    </aside>
     </>
     
   );

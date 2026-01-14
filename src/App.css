@@ -39,32 +39,21 @@
 }
 
 
-.cabecera{
-  border: 2px solid black;
-  text-align: center;
-  background-color: gray;
-  color: black;
-  min-height: 100px;
-  
+.header{
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgb(124, 124, 124) !important;
 }
 
-.dashboard{
-  border: 2px solid black;
-  text-align: center;
-  background-color: greenyellow;
-  color: black;
-  min-height: 800px;
-  
-  
+.gris{
+  background-color: rgb(194, 194, 194) !important;
 }
 
-.roles{
-  border: 2px solid black;
-  text-align: center;
-  background-color: lightgrey;
-  color: black;
-  min-height: 800px;
-  
-  
+.verde{
+  background-color: rgb(133, 239, 11) !important;
+}
+
+.main{
+  min-height: 100vh;
 }
 
