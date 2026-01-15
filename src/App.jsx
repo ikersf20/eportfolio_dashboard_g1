@@ -16,6 +16,8 @@ function App() {
   const token = "1234567890"
   const menu = "Inicio, Perfil, Configuración"
 
+  const [user, setUser] = useState(nombre)
+
   return (
     <>
     <TokenContext.Provider value={token}>
@@ -23,10 +25,8 @@ function App() {
       <header>
         <div className="row">
           <div className="col-12 header text-center">
-            <Cabecera usuario = {nombre}
-                      token = {token}
-                      menu = {menu}
-            ></Cabecera>
+            <Cabecera usuario = {user}>
+            </Cabecera>
           </div>
         </div>
       </header>
