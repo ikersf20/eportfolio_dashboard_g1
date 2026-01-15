@@ -7,24 +7,31 @@ import Roles from './componentes/Roles/Roles'
 import Dashboard from './componentes/Dashboard/Dashboard'
 
 
+import TokenContext from './contextos/TokenContext';
+import UserContext from './contextos/UserContext';
+
+
 
 function App() {
   const nombre = "Usuario1"
   const token = "1234567890"
   const menu = "Inicio, Perfil, Configuración"
 
+  const [user, setUser] = useState(nombre)
+
   return (
+    <>
+    <TokenContext.Provider value={token}>
     <div className="container-fluid">
       <header>
         <div className="row">
           <div className="col-12 header text-center">
-            <Cabecera usuario = {nombre}
-                      token = {token}
-                      menu = {menu}
-            ></Cabecera>
+            <Cabecera usuario = {user}>
+            </Cabecera>
           </div>
         </div>
       </header>
+      <UserContext.Provider value={user}>
       <div className="row">
         <div className="col-3 text-center gris main"><Roles usuario = {nombre}
                                                             token = {token}
@@ -36,7 +43,10 @@ function App() {
                                                       </Dashboard>
         </div>
       </div>
+      </UserContext.Provider>
     </div>
+    </TokenContext.Provider>
+    </>
   )
 }
 
