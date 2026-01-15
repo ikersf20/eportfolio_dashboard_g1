@@ -7,6 +7,9 @@ import Roles from './componentes/Roles/Roles'
 import Dashboard from './componentes/Dashboard/Dashboard'
 
 
+import TokenContext from './contextos/TokenContext';
+
+
 
 function App() {
   const nombre = "Usuario1"
@@ -14,6 +17,8 @@ function App() {
   const menu = "Inicio, Perfil, Configuración"
 
   return (
+    <>
+    <TokenContext.Provider value={token}>
     <div className="container-fluid">
       <header>
         <div className="row">
@@ -37,6 +42,8 @@ function App() {
         </div>
       </div>
     </div>
+    </TokenContext.Provider>
+    </>
   )
 }
 
