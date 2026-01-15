@@ -8,6 +8,7 @@ import Dashboard from './componentes/Dashboard/Dashboard'
 
 
 import TokenContext from './contextos/TokenContext';
+import UserContext from './contextos/UserContext';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           </div>
         </div>
       </header>
+      <UserContext.Provider value={user}>
       <div className="row">
         <div className="col-3 text-center gris main"><Roles usuario = {nombre}
                                                             token = {token}
@@ -41,6 +43,7 @@ function App() {
                                                       </Dashboard>
         </div>
       </div>
+      </UserContext.Provider>
     </div>
     </TokenContext.Provider>
     </>
