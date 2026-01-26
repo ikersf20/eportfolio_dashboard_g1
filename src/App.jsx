@@ -9,6 +9,7 @@ import Dashboard from './componentes/Dashboard/Dashboard'
 
 import TokenContext from './contextos/TokenContext';
 import UserContext from './contextos/UserContext';
+import NuevaEvidencia from './componentes/NuevaEvidencia/NuevaEvidencia'
 
 
 
@@ -41,6 +42,7 @@ function App() {
                                                                   token = {token}
                                                                    menu = {menu}>
                                                       </Dashboard>
+                                                      <NuevaEvidencia></NuevaEvidencia>
         </div>
       </div>
       </UserContext.Provider>
