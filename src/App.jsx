@@ -42,7 +42,7 @@ function App() {
                                                                   token = {token}
                                                                    menu = {menu}>
                                                       </Dashboard>
-                                                      <NuevaEvidencia></NuevaEvidencia>
+                                                      
         </div>
       </div>
       </UserContext.Provider>

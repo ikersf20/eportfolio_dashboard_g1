@@ -14,4 +14,4 @@ function useMisModulosMatriculados(){
 
     return({buscando, lista})
 }
-export default useMisModulosMatriculados
+export default useMisModulosMatriculados;
