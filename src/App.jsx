@@ -14,9 +14,9 @@ import NuevaEvidencia from './componentes/NuevaEvidencia/NuevaEvidencia'
 
 
 function App() {
-  const nombre = "Usuario1"
-  const token = "1234567890"
-  const menu = "Inicio, Perfil, Configuración"
+  const nombre = "Victor"
+  const token = "dada78wda7w"
+  const menu = "menu"
 
   const [user, setUser] = useState(nombre)
 
