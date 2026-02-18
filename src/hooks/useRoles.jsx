@@ -7,7 +7,7 @@ function useRoles(){
     const user = useContext(UserContext)
 
     const [buscando, setBuscando] = useState(false)
-    const [lista, setLista] = useState([roles])
+    const [lista, setLista] = useState(roles[user])
 
 
     return {buscando, lista}
