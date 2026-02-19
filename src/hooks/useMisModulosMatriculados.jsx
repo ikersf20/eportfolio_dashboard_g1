@@ -1,6 +1,7 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import UserContext from "../contextos/UserContext"
 import modulosMatriculados from "../mocks/mock-matriculados"
+import getModulosMatriculados from "../servicios/ModulosMatriculados/getModulosMatriculados"
 
 function useMisModulosMatriculados(){
 
@@ -10,7 +11,15 @@ function useMisModulosMatriculados(){
     const [lista, setLista] = useState(modulosMatriculados[user])
 
 
+    function obtenerModulosMatriculados(){
+        setBuscando(true)
+        getModulosMatriculados().then((modulos)=>{
+            setLista(modulos[user])
+            setBuscando(false)
+        })
+    }
 
+    useEffect(obtenerModulosMatriculados,[])
 
     return({buscando, lista})
 }
